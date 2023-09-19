@@ -63,7 +63,7 @@ public class StreamDemo {
 		List<Integer> li=nums.stream().distinct().sorted().collect(Collectors.toList());
 		System.out.println(li.get(2));
 		}
-		Should I don't know Doja play one
+		
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
 			
