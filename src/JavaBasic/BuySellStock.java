@@ -17,6 +17,19 @@ public class BuySellStock {
 		}
 		return maxProfit;
 	}
+	/*
+	 * int max_profit = 0;
+        for(int j=0;j<prices.length;j++) {
+            for(int i=j+1;i<prices.length;i++) {
+                if(prices[i] > prices[j]) {
+                    int profit = prices[i] - prices[j];
+                    max_profit = Math.max(max_profit, profit);
+                }
+            }       
+            }
+            return max_profit;
+        }
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
