@@ -16,7 +16,7 @@ public class twoSum {
 		 for(int i=0;i<numbers.length;i++) {
 			 if(map.get(numbers[i]) != null) {
 				 int[] res = {map.get(numbers[i]), i};
-				 System.out.println(Arrays.toString(res));
+				 //System.out.println(Arrays.toString(res));
 				 return res;
 			 }
 			 map.put(target - numbers[i], i);
