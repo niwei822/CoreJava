@@ -12,8 +12,8 @@ class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(0);
         ListNode lastNode = dummy;
-
-        while(list1 != null && list2 != null) {
+        
+        while(list1 != null && list2 !=null) {
             if(list1.val < list2.val) {
                 lastNode.next = list1;
                 list1 = list1.next;
@@ -23,13 +23,12 @@ class Solution {
             }
             lastNode = lastNode.next;
         }
-        //After the loop, if either list1 or list2 still has remaining nodes
         if(list1 != null) {
             lastNode.next = list1;
-        } else {
+        } else if(list2 != null) {
             lastNode.next = list2;
         }
-        //return head of node
         return dummy.next;
+
     }
 }
